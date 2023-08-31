@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper Testimonial Slider</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- ************** 1 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo3.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              If there was a 10 start I’d give it. When I found Smart Slider 3
+              instantly knew that this was the premium slider I needed for all
+              my projects.
+            </p>
+            <img class="avater" src="./assets/image/avatar4.webp" alt="" />
+            <h4 class="profile-name">JANE LINN</h4>
+            <p class="designation">Community Manager</p>
+          </div>
+          <!-- ************** slide end ************* -->
+          <!-- ************** 2 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo4.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              Cannot recommend this plugin highly enough. Get the Pro version.
+              Use the Slider and all your website dreams will come true.
+            </p>
+            <img class="avater" src="./assets/image/avatar3.webp" alt="" />
+            <h4 class="profile-name">JAMES SMITH</h4>
+            <p class="designation">PHP Developer</p>
+          </div>
+          <!-- ************** slide end ************* -->
+          <!-- ************** 3 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo1.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              I’ve been searching for a good free slider plugin for a long time.
+              This is definitely the one! For a free plugin it does a lot of
+              things!
+            </p>
+            <img class="avater" src="./assets/image/avatar1.webp" alt="" />
+            <h4 class="profile-name">ZACK SALOMON</h4>
+            <p class="designation">Head Developer</p>
+          </div>
+          <!-- ************** slide end ************* -->
+          <!-- ************** 4 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo2.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              Slider3 is more powerful. It is amazing.Thanks to developer for
+              putting so much effort to create this well-thought plugin.
+            </p>
+            <img class="avater" src="./assets/image/avatar2.webp" alt="" />
+            <h4 class="profile-name">DIANA MILLER</h4>
+            <p class="designation">Marketing Manager</p>
+          </div>
+          <!-- ************** slide end ************* -->
+          <!-- ************** 5 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo5.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              The backend of the plugin is beautifully designed and fairly
+              intuitive – although there are so many options, it’s almost
+              daunting.
+            </p>
+            <img class="avater" src="./assets/image/avatar5.webp" alt="" />
+            <h4 class="profile-name">RYAN VIDAL</h4>
+            <p class="designation">Interactive Designer</p>
+          </div>
+          <!-- ************** slide end ************* -->
+          <!-- ************** 6 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo4.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              Cannot recommend this plugin highly enough. Get the Pro version.
+              Use the Slider and all your website dreams will come true.
+            </p>
+            <img class="avater" src="./assets/image/avatar3.webp" alt="" />
+            <h4 class="profile-name">JAMES SMITH</h4>
+            <p class="designation">PHP Developer</p>
+          </div>
+          <!-- ************** slide end ************* -->
+          <!-- ************** 7 slide start ************* -->
+          <div class="swiper-slide flex-column px-4 py-2">
+            <img
+              class="logo-img"
+              src="./assets/image/company-logo1.webp"
+              alt=""
+            />
+            <p class="slide-content">
+              I’ve been searching for a good free slider plugin for a long time.
+              This is definitely the one! For a free plugin it does a lot of
+              things!
+            </p>
+            <img class="avater" src="./assets/image/avatar1.webp" alt="" />
+            <h4 class="profile-name">ZACK SALOMON</h4>
+            <p class="designation">Head Developer</p>
+          </div>
+          <!-- ************** slide end ************* -->
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1050: {
+            slidesPerView: 3,
+          },
+          669: {
+            slidesPerView: 2,
+          },
+          462: {
+            slidesPerView: 1,
+          },
+          10: {
+            slidesPerView: 1,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- 
+
+  67
+
+I just did this for one of my current projects. You just have to change the location of the navigation HTML buttons and put them outside the swiper-container. For a better approach and behavior from the library, add a new class to them, and change the element in the JavaScript call.
+
+Example:
+
+<div class="swiper-container">
+ <div class="swiper-slides"></div>
+</div>
+<div class="swiper-button-prev-unique"></div>
+<div class="swiper-button-next-unique"></div>
+
+let carousel = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next-unique',
+    prevEl: '.swiper-button-prev-unique'
+  }
+});
+ -->
+  </body>
+</html>
